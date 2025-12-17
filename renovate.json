@@ -9,6 +9,7 @@
     "abandonments:recommended",
     "security:minimumReleaseAgeNpm"
   ],
+  "minimumReleaseAge": "1 day",
   "prHourlyLimit": 0,
   "automergeType": "pr",
   "packageRules": [
