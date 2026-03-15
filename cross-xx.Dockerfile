@@ -2,7 +2,7 @@
 # Load cross-platform helper functions
 FROM --platform=$BUILDPLATFORM tonistiigi/xx@sha256:c64defb9ed5a91eacb37f96ccc3d4cd72521c4bd18d5442905b95e2226b0e707 AS xx
 
-FROM --platform=$BUILDPLATFORM cgr.dev/chainguard/go:latest-dev@sha256:db5fd22b714032b054bf3de5e9d4f4a6d0321adc0682e1d10edd8f6f53a41901 AS builder
+FROM --platform=$BUILDPLATFORM cgr.dev/chainguard/go:latest-dev@sha256:6003b02739bafe9c54ddfe8fe3c6a005f5c55e7c8c6000cb166bfac1cc5c86c1 AS builder
 COPY --from=xx / /
 RUN xx-apk add --no-cache zlib-dev
 ARG TARGETOS
