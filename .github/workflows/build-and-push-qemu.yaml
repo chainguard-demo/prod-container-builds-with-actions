@@ -34,7 +34,7 @@ jobs:
       - 
         name: Extract metadata (tags, labels) for Docker
         id: meta
-        uses: docker/metadata-action@ed95091677497158a9ff38b314264cd965388d5e
+        uses: docker/metadata-action@4378dc6be7f72231dfe78ac7e0364a44f1c9f54b
         with:
           images: |
             ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}-qemu
