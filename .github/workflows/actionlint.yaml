@@ -36,7 +36,7 @@ jobs:
             release-assets.githubusercontent.com:443
 
       - name: Check out code
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: chainguard-actions/checkout@d1f1061cdaee56aa3a3bc3deb86b67b1db772dd6 # v6.0.2
         with:
           persist-credentials: false
 
@@ -48,7 +48,7 @@ jobs:
           echo "files=${yamls[*]}" >> "${GITHUB_OUTPUT}"
 
       - name: Action lint
-        uses: step-security/action-actionlint@d364e70a116a460ed220d67b1ca2f2579c48a40a # v1.69.1
+        uses: chainguard-actions/action-actionlint@c962543978edc1457aca0eeb3928c8c97387506c # v1.69.1
         env:
           SHELLCHECK_OPTS: "--exclude=SC2129"
         with:

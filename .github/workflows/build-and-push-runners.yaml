@@ -53,7 +53,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
       -
         name: Attest
-        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        uses: chainguard-actions/attest-build-provenance@c52790f45e81e8ce3d44fd64d15e089cdac2d60e # v4.1.0
         id: attest
         with:
           subject-name: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}-runner
@@ -105,7 +105,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
       -
         name: Attest
-        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        uses: chainguard-actions/attest-build-provenance@c52790f45e81e8ce3d44fd64d15e089cdac2d60e # v4.1.0
         id: attest
         with:
           subject-name: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}-runner
@@ -122,7 +122,7 @@ jobs:
     steps:
       -
         name: Install Cosign
-        uses: sigstore/cosign-installer@faadad0cce49287aee09b3a48701e75088a2c6ad # v4.0.0
+        uses: chainguard-actions/cosign-installer@3d4272fbfb966daf6ef8207d58530a6aa228bd45 # v4.1.1
       -
         name: Login to GitHub Container Registry
         uses: docker/login-action@4907a6ddec9925e35a0a9e82d7399ccc52663121 # v4.1.0
@@ -132,7 +132,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       -
         name: Install crane
-        uses: imjasonh/setup-crane@31b88efe9de28ae0ffa220711af4b60be9435f6e # v0.4
+        uses: chainguard-actions/setup-crane@da590462950ad7f31ba01fc43ad1144bc532f265 # v0.5
       -
         name: Create, Push and Sign Multi-Platform Manifest
         run: |

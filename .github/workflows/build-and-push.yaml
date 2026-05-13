@@ -17,7 +17,7 @@ jobs:
     steps:
       - 
         name: Install Cosign
-        uses: sigstore/cosign-installer@faadad0cce49287aee09b3a48701e75088a2c6ad # v4.0.0
+        uses: chainguard-actions/cosign-installer@3d4272fbfb966daf6ef8207d58530a6aa228bd45 # v4.1.1
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f # v3.12.0
@@ -51,7 +51,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
       -
         name: Attest
-        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        uses: chainguard-actions/attest-build-provenance@c52790f45e81e8ce3d44fd64d15e089cdac2d60e # v4.1.0
         id: attest
         with:
           subject-name: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}-simple

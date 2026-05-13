@@ -9,6 +9,7 @@ It is intended to demonstrate how to:
  - pin images and actions to digests
  - sign images with cosign
  - keep images and actions up-to-date via [renovate](https://github.com/renovatebot)
+ - use Chainguard Actions to enusre hardened and protected CI/CD
 
 The repo contains the following:
 
