@@ -17,7 +17,7 @@ jobs:
     steps:
       - 
         name: Install Cosign
-        uses: chainguard-actions/cosign-installer@8f342bbbb6d9ddb6e923e2612fa7d713477990f5 # v4.1.1
+        uses: chainguard-actions/cosign-installer@v4
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f # v3.12.0
