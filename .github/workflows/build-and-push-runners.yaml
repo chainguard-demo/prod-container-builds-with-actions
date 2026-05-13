@@ -122,7 +122,7 @@ jobs:
     steps:
       -
         name: Install Cosign
-        uses: sigstore/cosign-installer@faadad0cce49287aee09b3a48701e75088a2c6ad # v4.0.0
+        uses: chainguard-actions/cosign-installer@8f342bbbb6d9ddb6e923e2612fa7d713477990f5 # v4.1.1
       -
         name: Login to GitHub Container Registry
         uses: docker/login-action@4907a6ddec9925e35a0a9e82d7399ccc52663121 # v4.1.0
