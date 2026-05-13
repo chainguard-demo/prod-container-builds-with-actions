@@ -26,7 +26,7 @@ jobs:
       contents: read # Clone the repository
       security-events: write # Upload SARIF results to Code Scanning
     steps:
-      - uses: chainguard-actions/harden-runner@e20806565d40fd3200c720c50b4890d29916277c # v2.16.0
+      - uses: step-security/harden-runner@fe104658747b27e96e4f7e80cd0a94068e53901d # v2.16.1
         with:
           egress-policy: block
           allowed-endpoints: >
@@ -41,4 +41,4 @@ jobs:
           persist-credentials: false
 
       - name: Run zizmor
-        uses: chainguard-actions/zizmor-action@310f7d6f353a8d9bf06c667f33b1bafef2c5dd29 # v0.5.2
+        uses: zizmorcore/zizmor-action@71321a20a9ded102f6e9ce5718a2fcec2c4f70d8 # v0.5.2
