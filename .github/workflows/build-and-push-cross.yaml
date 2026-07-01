@@ -53,7 +53,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
       -
         name: Attest
-        uses: chainguard-actions/attest-build-provenance@c52790f45e81e8ce3d44fd64d15e089cdac2d60e # v4.1.0
+        uses: chainguard-actions/attest-build-provenance@ba968bd7c54b40a4f8c43282db9943c6a6332327 # v4.1.0
         id: attest
         with:
           subject-name: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}-cross
