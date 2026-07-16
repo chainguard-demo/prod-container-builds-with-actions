@@ -1,0 +1,13 @@
+spec:
+  authorities:
+    # Accept keyless commits signed by a chainguard.dev identity via Google.
+    - keyless:
+        url: https://fulcio.sigstore.dev
+        identities:
+          - subjectRegExp: .+@chainguard.dev$
+            issuer: https://accounts.google.com
+      ctlog:
+        url: https://rekor.sigstore.dev
+    # Also accept GitHub-signed merge commits.
+    - key:
+        kms: https://github.com/web-flow.gpg
