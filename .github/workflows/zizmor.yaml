@@ -36,7 +36,7 @@ jobs:
             ghcr.io
 
       - name: Check out code
-        uses: chainguard-actions/checkout@5c571b05fb026b9251781bee09aadc0d09736c72 # v7.0.0
+        uses: chainguard-actions/checkout@ec419da8013e66e059571719dbfa6d1483438668 # v7.0.1
         with:
           persist-credentials: false
 
