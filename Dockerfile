@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1@sha256:87999aa3d42bdc6bea60565083ee17e86d1f3339802f543c0d03998580f9cb89
+# syntax=docker/dockerfile:1@sha256:ecfaec9ed6d810b56388c508f4121597bfbba70d41a6dfeee4d8cad5f295fc32
 FROM cgr.dev/chainguard/go:latest-dev@sha256:041a53344f009008fdd8ec3d2dba43cc19a83d2b856635f802b09c8e76552b23 AS builder
 
 WORKDIR /work
