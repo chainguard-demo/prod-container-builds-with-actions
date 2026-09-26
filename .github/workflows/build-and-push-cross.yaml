@@ -16,7 +16,7 @@ jobs:
     steps:
       - 
         name: Install Cosign
-        uses: chainguard-actions/cosign-installer@fe5d227a7ce3879781a57b95062451f0dd03096a # v4.1.2
+        uses: chainguard-actions/cosign-installer@b87981cc3b0232e11827d1a8c6bcfa63d6cbd97a # v4.1.2
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@99012661954931238ded8c8b007157a8430204e1 # v4.4.0
