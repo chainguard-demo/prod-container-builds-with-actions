@@ -48,7 +48,7 @@ jobs:
           echo "files=${yamls[*]}" >> "${GITHUB_OUTPUT}"
 
       - name: Action lint
-        uses: chainguard-actions/action-actionlint@1210a6d986399a419a4864d1701844b57f9c2468 # v1.80.6
+        uses: chainguard-actions/action-actionlint@be0b68c10decd16ac8accb063fe8b1f5f5cb69c2 # v1.81.1
         env:
           SHELLCHECK_OPTS: "--exclude=SC2129"
         with:
